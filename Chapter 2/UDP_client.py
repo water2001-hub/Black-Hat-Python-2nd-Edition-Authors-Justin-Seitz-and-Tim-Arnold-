@@ -24,7 +24,7 @@ while sendto() can specify the destination as a UDP client
 #receive some data
 data, addr = client.recvfrom(4096)
 """
-recefrom() function returns two items:
+recvfrom() function returns two items:
 data: The received data (in bytes).
 address: A tuple containing the sender's IP address and port.
 """
