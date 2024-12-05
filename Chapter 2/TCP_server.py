@@ -26,7 +26,7 @@ def main():
 
 def handle_client(client_socket):  #passing 'client' in the argement
   with client_socket as sock:
-#with statement for exception handling --> i.e., close 'sock' automatically after to avoid exception
+#with statement for exception handling --> i.e., close object 'sock' automatically to avoid exception
     request = sock.recv(1024)
     print(f'[*] Received: {request.decode("utf-8")}')
     sock.send(b'ACK')
